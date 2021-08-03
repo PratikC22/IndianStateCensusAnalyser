@@ -40,7 +40,7 @@ public class StateCensus {
 
     @Override
     public String toString() {
-        return "StateCences{" +
+        return "StateCensus{" +
                "state='" + state + '\'' +
                ", population='" + population + '\'' +
                ", areaInSqKm='" + areaInSqKm + '\'' +

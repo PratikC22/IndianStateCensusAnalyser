@@ -29,7 +29,7 @@ public class IndianStateCensusAnalyzer {
             }
 
             @SuppressWarnings("resource")
-            String fileHeaders[] = new CSVReader(new FileReader(FILE_PATH + fileName)).readNext();
+            String[] fileHeaders = new CSVReader(new FileReader(FILE_PATH + fileName)).readNext();
             if (!Arrays.toString(fileHeaders).equals(Arrays.toString(headers))) {
                 throw new CustomExceptionService(CustomExceptionService.ExceptionType.WRONG_HEADER,
                         "enter proper extension");
